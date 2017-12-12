@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#eee"
     tools:context="com.sanke.ilafedoseev.raitmyworkstatistic.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#eee"
+        android:background="#fff"
         android:layout_margin="10dp"
         android:orientation="vertical"
         android:paddingTop="10dp"
@@ -24,7 +25,7 @@
 
         <LinearLayout
             android:layout_weight="1"
-            android:paddingTop="5dp"
+            android:paddingTop="0dp"
             android:paddingLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -33,8 +34,9 @@
                 android:id="@+id/averageInterest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight=".9"
-                android:textSize="45dp" />
+                android:layout_weight="1.5"
+                android:text="0.0"
+                android:textSize="40dp" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -51,21 +53,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="15dp"
-            android:background="#fed653"
+            android:background="#fde19e"
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/allReview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textStyle="bold"
-                android:text="За все время : 30000"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textStyle="bold"
-                android:text="За месяц : 30000"/>
-
+                android:text="За все время : 0"/>
 
         </LinearLayout>
 
@@ -79,9 +75,11 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:padding="3dp"
+                android:background="#efefef"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                
+
                 <TextView
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
@@ -89,30 +87,12 @@
                     android:text="5 звезд"/>
 
                 <TextView
+                    android:id="@+id/starPercent5"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="textEnd"
-                    android:text="69%"/>
-
-            </LinearLayout>
-            
-            <LinearLayout
-                android:layout_marginTop="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_weight=".3"
-                    android:layout_width="match_parent"
-                    android:layout_height="4dp"
-                    android:background="#febe40"></LinearLayout>
-
-                <LinearLayout
-                    android:layout_weight=".7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></LinearLayout>
-
+                    android:text="0%"/>
 
             </LinearLayout>
 
@@ -124,6 +104,8 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -134,30 +116,12 @@
                         android:text="4 звезды"/>
 
                     <TextView
+                        android:id="@+id/starPercent4"
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="textEnd"
-                        android:text="69%"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_marginTop="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:layout_weight=".3"
-                        android:layout_width="match_parent"
-                        android:layout_height="4dp"
-                        android:background="#febe40"></LinearLayout>
-
-                    <LinearLayout
-                        android:layout_weight=".7"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></LinearLayout>
-
+                        android:text="0%"/>
 
                 </LinearLayout>
 
@@ -169,6 +133,8 @@
                     android:orientation="vertical">
 
                     <LinearLayout
+                        android:padding="3dp"
+                        android:background="#efefef"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -179,30 +145,12 @@
                             android:text="3 звезды"/>
 
                         <TextView
+                            android:id="@+id/starPercent3"
                             android:layout_weight="1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAlignment="textEnd"
-                            android:text="69%"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginTop="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <LinearLayout
-                            android:layout_weight=".3"
-                            android:layout_width="match_parent"
-                            android:layout_height="4dp"
-                            android:background="#febe40"></LinearLayout>
-
-                        <LinearLayout
-                            android:layout_weight=".7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"></LinearLayout>
-
+                            android:text="0%"/>
 
                     </LinearLayout>
 
@@ -214,6 +162,8 @@
                         android:orientation="vertical">
 
                         <LinearLayout
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -224,32 +174,15 @@
                                 android:text="2 звезды"/>
 
                             <TextView
+                                android:id="@+id/starPercent2"
                                 android:layout_weight="1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAlignment="textEnd"
-                                android:text="69%"/>
+                                android:text="0%"/>
 
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_marginTop="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <LinearLayout
-                                android:layout_weight=".3"
-                                android:layout_width="match_parent"
-                                android:layout_height="4dp"
-                                android:background="#febe40"></LinearLayout>
-
-                            <LinearLayout
-                                android:layout_weight=".7"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"></LinearLayout>
-
-
-                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_weight="4"
@@ -259,6 +192,8 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:padding="3dp"
+                                android:background="#efefef"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
 
@@ -269,32 +204,15 @@
                                     android:text="1 звезда"/>
 
                                 <TextView
+                                    android:id="@+id/starPercent"
                                     android:layout_weight="1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:textAlignment="textEnd"
-                                    android:text="69%"/>
+                                    android:text="0%"/>
 
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_marginTop="5dp"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:layout_weight=".3"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="4dp"
-                                    android:background="#febe40"></LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_weight=".7"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"></LinearLayout>
-
-
-                            </LinearLayout>
 
         </LinearLayout>
 
@@ -324,7 +242,7 @@
         android:layout_marginRight="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#eee">
+        android:background="#fff">
 
         <LinearLayout
             android:layout_weight="1"
@@ -338,6 +256,7 @@
                 android:src="@drawable/ic_happy"/>
 
             <TextView
+                android:id="@+id/likesNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
@@ -345,8 +264,8 @@
                 android:textSize="20dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:background="#ddd"
-                android:text="693"/>
+                android:background="#fde19e"
+                android:text="0"/>
 
         </LinearLayout>
 
@@ -362,6 +281,7 @@
                 android:src="@drawable/ic_confused"/>
 
             <TextView
+                android:id="@+id/dislikesNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
@@ -369,8 +289,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:textSize="20dp"
-                android:background="#ddd"
-                android:text="693"/>
+                android:background="#fde19e"
+                android:text="0"/>
 
         </LinearLayout>
 
